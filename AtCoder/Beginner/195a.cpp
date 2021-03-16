@@ -6,29 +6,7 @@ typedef pair<int, int> pii;
 typedef pair<ll,ll> pll;
 
 int main(){
-    int m, h; cin >> m >> h;
-    if (h%m == 0){
-        cout << "Yes" << endl;
-    }
-    else{
-        cout << "No" << endl;
-    }
-    return 0;
+    ld a,b; cin >> a >> b;
+    cout << setprecision(3) << fixed << (1.0 - (b/a))*100 << endl;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
