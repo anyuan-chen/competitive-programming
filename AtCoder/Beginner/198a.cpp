@@ -7,7 +7,8 @@ typedef pair<ll, ll> pll;
 
 int main()
 {
-    ld a, b;
-    cin >> a >> b;
-    cout << setprecision(3) << fixed << (1.0 - (b / a)) * 100 << endl;
+    int n;
+    cin >> n;
+    cout << n - 1;
+    return 0;
 }
