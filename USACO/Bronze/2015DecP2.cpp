@@ -8,7 +8,7 @@
     int marr[101];
     int main()
     {
-        ios_base::sync_with_stdio(false);
+        ios_base::sync_with_stdio(false)
         cin.tie(NULL);
         freopen("speeding.in", "r", stdin);
         freopen("speeding.out", "w", stdout);
