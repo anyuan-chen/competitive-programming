@@ -22,3 +22,29 @@ int main()
     cout << mx << endl;
 
 }
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+typedef long double ld;
+typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
+
+
+int main()
+{
+    int n; cin >> n;
+    vector<int> diff (1e7+1, 0);
+    for (int i = 0; i < n; i++) {
+        int st, ed;
+        cin >> st >> ed;
+        diff[st]++;
+        diff[ed]--;
+    }
+    int max_element = 0;
+    for (int i = 1; i < diff.size(); i++){
+        diff[i] += diff[i-1];
+        max_element = max(max_element, diff[i]);
+    }
+    cout << max_element << endl;
+
+}
