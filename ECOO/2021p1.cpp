@@ -18,7 +18,7 @@ int main()
     }
     else if (sent <= min1)
     {
-        cout << min1;
+        cout << min1;   
     }
     else if (sent <= min2)
     {
